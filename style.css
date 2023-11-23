@@ -1,1 +1,21 @@
 
+p:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+p::before{
+    content: 'there's;
+    color: red;
+}
+
+p::after{
+    content: "THX :D";
+    color: blueviolet;
+    font-weight: bold;
+}
+p::selection{
+    background-color: tomato;
+    color: bisque;
+}
