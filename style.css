@@ -11,10 +11,18 @@ p {
     display: block;
 }
 
-/* Hover effect */
-p:hover {
-    color: blue;
-    font-weight: bold;
+/* Animated text */
+.animated-text {
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: blue;
+    }
+    to {
+        color: green;
+    }
 }
 
 /* Content before the paragraph */
@@ -55,7 +63,28 @@ img {
     filter: grayscale(50%) blur(2px); /* Example filters, adjust as needed */
 }
 
-
-a:hover {
-    color: red;
+/* Bootstrap button animation */
+.btn-primary {
+    transition: background-color 0.5s;
 }
+
+.btn-primary:hover {
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+/* Additional animation */
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation on button click */
+.rotate {
+    animation: rotateImage 2s linear infinite;
+}
+
+
