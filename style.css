@@ -1,21 +1,45 @@
+/* Apply styles to the paragraph */
+p {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
 
+/* Hover effect */
 p:hover {
     color: blue;
     font-weight: bold;
 }
 
-
-p::before{
-    content: 'there's;
+/* Content before the paragraph */
+p::before {
+    content: 'there\'s'; /* Fixing the syntax error in the content value */
     color: red;
 }
 
-p::after{
-    content: "THX :D";
+/* Content after the paragraph */
+p::after {
+    content: " THX :D"; /* Adding a space before "THX :D" */
     color: blueviolet;
     font-weight: bold;
 }
-p::selection{
+
+/* Selection style */
+p::selection {
     background-color: tomato;
     color: bisque;
+}
+
+/* Add a link to a website */
+a {
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+    color: black; /* Adjust link color as needed */
+    text-decoration: none;
+}
+
+/* Apply styles on hover for the link */
+a:hover {
+    color: red;
 }
