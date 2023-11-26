@@ -1,3 +1,9 @@
+/* Apply styles to the content container */
+.content-container {
+    padding: 20px; /* Adjust padding as needed */
+    margin: 10px; /* Adjust margin as needed */
+}
+
 /* Apply styles to the paragraph */
 p {
     visibility: visible;
@@ -13,13 +19,13 @@ p:hover {
 
 /* Content before the paragraph */
 p::before {
-    content: 'there\'s'; /* Fixing the syntax error in the content value */
+    content: 'there\'s';
     color: red;
 }
 
 /* Content after the paragraph */
 p::after {
-    content: " THX :D"; /* Adding a space before "THX :D" */
+    content: " THX :D";
     color: blueviolet;
     font-weight: bold;
 }
@@ -40,6 +46,16 @@ a {
 }
 
 /* Apply styles on hover for the link */
+a:hover {
+    color: red;
+}
+
+/* Apply image filters */
+img {
+    filter: grayscale(50%) blur(2px); /* Example filters, adjust as needed */
+}
+
+
 a:hover {
     color: red;
 }
