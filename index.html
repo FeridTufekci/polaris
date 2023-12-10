@@ -2,140 +2,19 @@
 <html lang="en">
 <head>
     <title>Sirius</title>
+    <!-- Embed Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Embed Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Include Bootstrap JS files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Include additional scripts, if needed -->
+
+    <!-- Your existing styles and other links go here -->
     <link rel="stylesheet" href="style.css">
-    <!-- Include Bootstrap CSS and JS files -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Apply styles to the content container */
-        .content-container {
-            padding: 20px; /* Adjust padding as needed */
-            margin: 10px; /* Adjust margin as needed */
-        }
-
-        /* Apply styles to the paragraph inside .content-container */
-        .content-container > p {
-            visibility: visible;
-            opacity: 1;
-            display: block;
-        }
-
-        /* Animated text */
-        .content-container > .animated-text {
-            animation: colorChange 2s infinite alternate;
-        }
-
-        @keyframes colorChange {
-            from {
-                color: blue;
-            }
-            to {
-                color: green;
-            }
-        }
-
-        /* Content before the paragraph */
-        .content-container > p::before {
-            content: 'there\'s';
-            color: red;
-        }
-
-        /* Content after the paragraph */
-        .content-container > p::after {
-            content: " THX :D";
-            color: blueviolet;
-            font-weight: bold;
-        }
-
-        /* Selection style */
-        .content-container > p::selection {
-            background-color: tomato;
-            color: bisque;
-        }
-
-        /* Add a link to a website inside .content-container */
-        .content-container > a {
-            visibility: visible;
-            opacity: 1;
-            display: inline-block;
-            color: black; /* Adjust link color as needed */
-            text-decoration: none;
-        }
-
-        /* Apply styles on hover for the link inside .content-container */
-        .content-container > a:hover {
-            color: red;
-        }
-
-        /* Apply image filters to images inside .content-container */
-        .content-container > img {
-            filter: grayscale(50%) blur(2px); /* Example filters, adjust as needed */
-        }
-
-        /* Bootstrap button animation */
-        .content-container > .btn-primary {
-            transition: background-color 0.5s;
-        }
-
-        .content-container > .btn-primary:hover {
-            background-color: #28a745; /* Bootstrap success color */
-        }
-
-        /* Additional animation */
-        @keyframes rotateImage {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Apply the animation on button click */
-        .content-container > .rotate {
-            animation: rotateImage 2s linear infinite;
-        }
-
-        /* Navbar styles */
-        .nav-bar {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-
-        /* Content styles */
-        .content {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-        }
-
-        /* Footer styles */
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        /* Responsive video container */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 <body>
     <div class="nav-bar">Navbar content here</div>
@@ -154,3 +33,4 @@
     <div class="footer">Footer content here</div>
 </body>
 </html>
+
