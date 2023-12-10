@@ -8,12 +8,129 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Apply styles to the content container */
+        .content-container {
+            padding: 20px; /* Adjust padding as needed */
+            margin: 10px; /* Adjust margin as needed */
+        }
+
+        /* Apply styles to the paragraph inside .content-container */
+        .content-container > p {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+
+        /* Animated text */
+        .content-container > .animated-text {
+            animation: colorChange 2s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            from {
+                color: blue;
+            }
+            to {
+                color: green;
+            }
+        }
+
+        /* Content before the paragraph */
+        .content-container > p::before {
+            content: 'there\'s';
+            color: red;
+        }
+
+        /* Content after the paragraph */
+        .content-container > p::after {
+            content: " THX :D";
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        /* Selection style */
+        .content-container > p::selection {
+            background-color: tomato;
+            color: bisque;
+        }
+
+        /* Add a link to a website inside .content-container */
+        .content-container > a {
+            visibility: visible;
+            opacity: 1;
+            display: inline-block;
+            color: black; /* Adjust link color as needed */
+            text-decoration: none;
+        }
+
+        /* Apply styles on hover for the link inside .content-container */
+        .content-container > a:hover {
+            color: red;
+        }
+
+        /* Apply image filters to images inside .content-container */
+        .content-container > img {
+            filter: grayscale(50%) blur(2px); /* Example filters, adjust as needed */
+        }
+
+        /* Bootstrap button animation */
+        .content-container > .btn-primary {
+            transition: background-color 0.5s;
+        }
+
+        .content-container > .btn-primary:hover {
+            background-color: #28a745; /* Bootstrap success color */
+        }
+
+        /* Additional animation */
+        @keyframes rotateImage {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Apply the animation on button click */
+        .content-container > .rotate {
+            animation: rotateImage 2s linear infinite;
+        }
+
+        /* Navbar styles */
+        .nav-bar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Content styles */
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="content-container">
-        <p class="animated-text">there's no superfluous ten for me I guess :)</p>
-        <img src="path/to/your/image.jpg" alt="Mouse Image" class="img-fluid rounded-circle">
-        <button class="btn btn-primary" onclick="toggleAnimation()">Toggle Animation</button>
+    <div class="nav-bar">Navbar content here</div>
+    <div class="content">
+        <div class="content-container">
+            <p class="animated-text">there's no superfluous ten for me I guess :)</p>
+            <img src="path/to/your/image.jpg" alt="Mouse Image" class="img-fluid rounded-circle">
+            <button class="btn btn-primary rotate" onclick="toggleAnimation()">Toggle Animation</button>
+            <a href="#">Link to a website</a>
+        </div>
     </div>
+    <div class="footer">Footer content here</div>
 </body>
 </html>
