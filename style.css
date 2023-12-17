@@ -2,32 +2,48 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #fff;
-}
-
-header, nav, section, footer {
-    margin: 20px;
+    background-color: #001a33; /* Dark blue background */
+    color: #0066cc; /* Blue text color */
 }
 
 header {
     text-align: center;
+    padding: 20px;
+    background-color: #004080; /* Darker blue header */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+h1 {
+    margin: 0;
 }
 
-nav a {
+main {
+    margin: 20px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+a {
+    color: #0066cc; /* Blue link color */
     text-decoration: none;
-    margin: 0 15px;
-    color: #fff;
+    margin-top: 10px;
+    display: block;
     transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+a:hover {
+    color: #fff; /* White link color on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #004080; /* Darker blue footer */
+    color: #0066cc; /* Blue text color in footer */
+}
+
     color: #ffcc00; /* Yellow color for hover effect */
 }
 
