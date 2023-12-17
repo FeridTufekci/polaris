@@ -1,90 +1,40 @@
-/* Apply styles to the content container */
-.content-container {
-    padding: 20px; /* Adjust padding as needed */
-    margin: 10px; /* Adjust margin as needed */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Apply styles to the paragraph */
-p {
-    visibility: visible;
-    opacity: 1;
-    display: block;
+header, nav, section, footer {
+    margin: 20px;
 }
 
-/* Animated text */
-.animated-text {
-    animation: colorChange 2s infinite alternate;
+header {
+    text-align: center;
 }
 
-@keyframes colorChange {
-    from {
-        color: blue;
-    }
-    to {
-        color: green;
-    }
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-/* Content before the paragraph */
-p::before {
-    content: 'there\'s';
-    color: red;
-}
-
-/* Content after the paragraph */
-p::after {
-    content: " THX :D";
-    color: blueviolet;
-    font-weight: bold;
-}
-
-/* Selection style */
-p::selection {
-    background-color: tomato;
-    color: bisque;
-}
-
-/* Add a link to a website */
-a {
-    visibility: visible;
-    opacity: 1;
-    display: inline-block;
-    color: black; /* Adjust link color as needed */
+nav a {
     text-decoration: none;
+    margin: 0 15px;
+    color: #333;
 }
 
-/* Apply styles on hover for the link */
-a:hover {
-    color: red;
+section {
+    margin-top: 30px;
 }
 
-/* Apply image filters */
-img {
-    filter: grayscale(50%) blur(2px); /* Example filters, adjust as needed */
+h2 {
+    color: #333;
 }
 
-/* Bootstrap button animation */
-.btn-primary {
-    transition: background-color 0.5s;
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f4f4f4;
 }
-
-.btn-primary:hover {
-    background-color: #28a745; /* Bootstrap success color */
-}
-
-/* Additional animation */
-@keyframes rotateImage {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Apply the animation on button click */
-.rotate {
-    animation: rotateImage 2s linear infinite;
-}
-
-
