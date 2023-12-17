@@ -2,6 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #111;
+    color: #fff;
 }
 
 header, nav, section, footer {
@@ -21,7 +23,12 @@ nav ul {
 nav a {
     text-decoration: none;
     margin: 0 15px;
-    color: #333;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Yellow color for hover effect */
 }
 
 section {
@@ -29,12 +36,17 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #ffcc00;
+}
+
+ul {
+    list-style: none;
 }
 
 footer {
     text-align: center;
     margin-top: 50px;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #222;
+    color: #fff;
 }
