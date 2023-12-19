@@ -44,25 +44,7 @@ footer {
     color: #0066cc; /* Blue text color in footer */
 }
 
-    color: #ffcc00; /* Yellow color for hover effect */
-}
-
-section {
-    margin-top: 30px;
-}
-
-h2 {
-    color: #ffcc00;
-}
-
-ul {
-    list-style: none;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 10px;
-    background-color: #222;
-    color: #fff;
+/* Add this block for the hover effect on the footer links */
+footer a:hover {
+    color: #fff; /* White color for hover effect */
 }
